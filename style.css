@@ -39,12 +39,14 @@
  p {
      color: var(--Blue-950);
      line-height: 2rem;
-     font-weight: 700;
+     font-weight: 400;
+     word-spacing: 5px;
  }
 
- h5 {
+ h3 {
      color: var(--Blue-950);
-     font-weight: 500;
+     font-weight: 700;
+     font-size: 32px;
  }
 
  .ux {
