@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+     --Blue-950: hsl(240, 38%, 20%);
+     --Gray-400: hsl(240, 18%, 77%);
+ }
+
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     min-height: 100vh;
+     background-image: url(/images/pattern-bg.svg), url('/images/pattern-curve.svg');
+     background-repeat: no-repeat, no-repeat;
+     background-position: right, bottom left; 
+      font-family: "Inter", sans-serif;
+ }
+
+
+
+ .slide1 {
+     max-width: 1000px;
+     margin: 0 auto 2rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     font-size: 25px;
+     background: url('/images/pattern-quotes.svg') no-repeat top left;
+
+
+ }
+
+ p {
+     color: var(--Blue-950);
+     line-height: 2rem;
+     font-weight: 700;
+ }
+
+ h5 {
+     color: var(--Blue-950);
+     font-weight: 500;
+ }
+
+ .ux {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     gap: 10px;
+     margin-top: 2rem;
+ }
+
+ .ux p {
+     font-size: 16px;
+     color: var(--Gray-400);
+     font-weight: 400;
+ }
+
+ .slide2 {
+     display: none;
+ }
+
+
+ .right {
+     position: relative;
+ }
+
+ .hero-img {
+     border-radius: 1rem;
+ }
+
+ .arrow {
+     width: 70px;
+     background: white;
+     border-radius: 20px;
+     box-shadow: 3px 3px 3px .1px black;
+     display: flex;
+     justify-content: space-between;
+     padding: 1rem;
+     position: absolute;
+     bottom: -10px;
+     left: 30px;
+     cursor: pointer;
+ }
+
+ .attribution {
+     font-size: 15px;
+     text-align: center;
+     margin-top: 3rem;
+ }
+
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+ }
+
+ @media (max-width: 768px) {
+    body{
+           background-image: url(/images/pattern-bg.svg), url('/images/pattern-curve.svg');
+     background-repeat: no-repeat, no-repeat;
+     background-position: top, bottom left;
+     background-size: 430px;
+     padding: 1rem;
+    }
+
+     .slide1 {
+        flex-direction: column-reverse;
+        background: url('/images/pattern-quotes.svg') no-repeat  center center;
+
+     }
+
+     .left{
+        margin-top: 3rem;
+        text-align: center;
+     }
+
+     .ux{
+        display: block;
+     }
+
+     .right img {
+         width: 320px;
+     }
+
+     .arrow{
+        left: 35%;
+        padding: 8px;
+        /* border-radius: 5px; */
+        width: 100px;
+        
+     }
+
+     .arrow img{
+        width: 20px;
+     }
+ }
