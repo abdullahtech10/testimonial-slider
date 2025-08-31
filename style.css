@@ -15,7 +15,7 @@
      align-items: center;
      flex-direction: column;
      min-height: 100vh;
-     background-image: url(/images/pattern-bg.svg), url('/images/pattern-curve.svg');
+     background-image: url('/images/pattern-bg.svg'), url('/images/pattern-curve.svg');
      background-repeat: no-repeat, no-repeat;
      background-position: right, bottom left; 
       font-family: "Inter", sans-serif;
